@@ -5,14 +5,23 @@
   font-family: Arial, sans-serif;
 }
 
-body {
+main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 60vh;
   background-color: #f0f4f8;
 }
-
+header{
+  width: 100%;
+  text-align: center;
+  background-color: #010a2a;
+  display: block;
+}
+header img{
+  width: 50%;
+  height: auto;
+}
 .container-jogo {
   text-align: center;
 }
