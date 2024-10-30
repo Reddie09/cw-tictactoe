@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+}
+
+.container-jogo {
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#tabuleiro {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 5px;
+}
+
+.celula {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: 2px solid #333;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.celula.x {
+  color: #f44336;
+}
+
+.celula.o {
+  color: #2196f3;
+}
+
+.celula:hover {
+  background-color: #e0e0e0;
+}
+
+#mensagem-vitoria {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.esconder {
+  display: none;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
